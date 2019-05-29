@@ -1,0 +1,28 @@
+int main()
+{
+	decl
+	int a,b,c,d,e;
+	str uname,passwd;
+	str msg1,msg2;
+	enddecl
+
+	begin
+	a=1;
+	msg1="Invalid Ceredentials";
+	msg2="Permission Denied";
+    while(a==1) do
+     d=exposcall("Read",-1,uname);
+     e=exposcall("Read",-1,passwd);
+     b=exposcall("Login",uname,passwd);
+     if(b==-1) then
+        c=exposcall("Write",-2,msg1);
+        else
+        if(b==-2) then
+        c=exposcall("Write",-2,msg2);
+        endif;
+     endif;
+     endwhile;   
+
+	return 0;
+	end
+}

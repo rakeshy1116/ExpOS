@@ -1,0 +1,18 @@
+int main()
+{
+decl 
+int i,a,b,c;
+enddecl
+
+begin
+a=exposcall("Heapset");
+a=exposcall("Read",-1,b);
+i=0;
+while(i<=b) do
+ a=exposcall("Read",-1,c);
+ a=exposcall("Write",-2,c);
+ i=i+1;
+ endwhile;
+ return 0;
+end
+}

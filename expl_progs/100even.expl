@@ -1,0 +1,18 @@
+int main()
+{
+	decl
+	int i,j,k,l;
+	enddecl
+
+	begin
+	i=exposcall("Heapset");
+	j=1;
+        k=0;
+        while(j<=100) do
+        l=exposcall("Write",-2,k);
+        j=j+1;
+        k=k+2;
+        endwhile;
+        return 0;
+        end
+}

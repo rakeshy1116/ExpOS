@@ -1,0 +1,20 @@
+int main()
+{
+	decl
+	int a,pid;
+	str c,d;
+	enddecl
+
+	begin
+	a=exposcall("Heapset");
+	pid=exposcall("Fork");
+	c="100even.xsm";
+	d="100odd.xsm";
+	if(pid==0) then
+	a=exposcall("Exec",c);
+	else
+	a=exposcall("Exec",d);
+	endif;
+	return 0;
+	end
+}

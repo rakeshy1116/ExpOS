@@ -1,0 +1,39 @@
+decl
+   int prime(int m);
+enddecl
+
+int prime(int m)
+{
+decl 
+  int i,j;
+enddecl
+begin
+  i=m;
+  j=i-1;
+  while(j>1) do
+    if((i%j)==0) then
+    return 0;
+    endif;
+  j=j-1;
+  endwhile;
+  return 1;
+end
+}
+
+int main()
+{
+decl 
+  int a,b,c,d;
+enddecl
+begin
+  a=2;
+   while(a<=100) do
+     c=prime(a);
+     if(c==1) then
+     b = exposcall("Write",-2,a);
+     endif;
+   a=a+1;
+   endwhile;
+  return 0;
+end
+}

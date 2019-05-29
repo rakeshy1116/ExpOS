@@ -1,0 +1,39 @@
+decl
+int a[100];
+enddecl
+
+int main()
+{
+decl 
+int i,v,j,k,l,n,temp;
+enddecl
+begin
+ v=exposcall("Read",-1,n);
+ i=0;
+ while(i<n) do
+  k=exposcall("Read",-1,a[i]);
+  i=i+1;
+ endwhile;
+ i=0;
+ j=0;
+ while(i<n) do
+  j=0;
+  while(j<(n-1)) do
+   if(a[j]>a[j+1]) then
+    temp = a[j];
+    a[j] = a[j+1];
+    a[j+1] = temp;
+   endif;
+   j=j+1;
+  endwhile;
+  i=i+1;
+ endwhile;
+ i=0;
+ while(i<n) do
+  l = exposcall("Write",-2,a[i]);
+  i=i+1;
+ endwhile;
+ return 0;
+end
+}
+ 

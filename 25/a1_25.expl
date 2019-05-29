@@ -1,0 +1,23 @@
+int main()
+{
+	decl 
+	int a,b,c,d,e,f;
+	str filename;
+	int permission;
+	enddecl
+
+	begin
+    a=exposcall("Read",-1,filename);
+    b=exposcall("Read",-1,permission);
+    c=exposcall("Create",filename,permission);
+    f=exposcall("Open",filename);
+    d=1;
+    while(d<=1100) do
+    e=exposcall("Write",f,d);
+    d=d+1;
+    endwhile;
+    
+	return 0;
+	end
+
+}
