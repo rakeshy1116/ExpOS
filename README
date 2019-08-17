@@ -6,3 +6,13 @@ Usage
  ./expl <path to ExpL program>
  cd xsm_expl/
  ./xsm -e ../assemblycode.xsm
+ 
+ 
+    eXpOS - Experimental Operating System.
+    
+    Languages :
+    1. Expl - Experimental programming Language (High level).
+    
+    2. Spl - System Programming Language (System level).
+    
+    Implementation of major System Calls (S/w Interrupts), Hardware Interrupts and Kernel Modules.
